@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .loader_bg {
+    position: fixed;
+    z-index: 9999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader img {
+    width: 280px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background: #333;
+  }
+  
+
+.home .max-width {
+    align-content: center;
+    padding-top: 10%;
+    padding-bottom: 12%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', cursive;
+    font-style: italic;
+}
+
+.home .home-content {
+    font-size: xx-large;
+}
+
+/* initiatives */
+.services {
+    color: #fff;
+    background: #111;
+  }
+  
+  .services .title::before,
+  .awards .title::before {
+    background: #fff;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .services .title::after,
+  .awards .title::after {
+    background: #111;
+    /* content: "What I Provide ?"; */
+  }
+  
+  .services .serv-content .card {
+    width: 340px;
+    height: 310px;
+    background: #222;
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px 21px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .services .serv-content .card:hover {
+    background: #1e3551;
+  }
+  
+  .services .serv-content .card .box {
+    transition: all 0.3s ease;
+  }
+  
+  .services .serv-content .card:hover .box {
+    transform: scale(1.05);
+  }
+  
+  .services .serv-content .card i {
+    font-size: 50px;
+    color: #888e8d;
+    background: linear-gradient(135deg, #041d3d, #fff, rgb(2, 133, 240));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 0.3s ease;
+  }
+  
+  .services .serv-content .card:hover i {
+    color: #fff;
+  }
+  
+  .services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+  }
+  
+  /* awards */
+  .awards {
+    color: #fff;
+    background: rgb(112, 76, 241);
+  }
+
+  .awards .award-content .card {
+    width: auto;
+    min-height: auto;
+    background: #222;
+    text-align: left;
+    border-radius: 10px;
+    padding: 50px 21px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .awards .award-content .card:hover {
+    background: #1e3551;
+  }
+  
+  .awards .award-content .card .box {
+    transition: all 0.3s ease;
+  }
+  
+  .awards .award-content .card:hover .box {
+    transform: scale(1.0);
+  }
+  
+  .awards .award-content .card:hover i {
+    color: #fff;
+  }
+  
+  .awards .award-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+  }
+/* chef */
+  .about {
+    background: #333;
+  }
+  .about .title::after {
+    text-overflow: ellipsis;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  
+  .about .about-content .left {
+    width: 45%;
+  }
+  
+  .about .about-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  .about .about-content .right {
+    width: 55%;
+    font-size: larger;
+  }
+  
+  .about .about-content .right .text {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  /* reviews */
+  .reviews {
+    color: #fff;
+    background: rgb(112, 76, 241);
+    flex-direction: row;
+  }
+
+  .reviews .title::after {
+    /* content: "What I did ?"; */
+    display: flex;
+  }
+  
+  .reviews .carousel .card1 {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .reviews .carousel .card1:hover {
+    background: #1e3551;
+  }
+  
+  .reviews .carousel .card1 .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .reviews.carousel .card1:hover .box {
+    transform: scale(1.05);
+  }
+  
+  .reviews .carousel .card1 .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+  }
+  
+  .reviews .carousel .card1 img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #888c8d;
+    transition: all 0.3s ease;
+  }
+  
+  .reviews .carousel .card1:hover img {
+    border-color: #fff;
+  }
+  
+  .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #000000 !important;
+    transition: all 0.3s ease;
+  }
+  
+  .owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+  }
+  
+  .owl-dot.active,
+  .owl-dot:hover {
+    background: #18365a !important;
+  }
+

@@ -1,0 +1,56 @@
+body {
+    background: "./src/images/picography-plated-tacos.jpg";
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: "Ubuntu", sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar.sticky {
+    padding: 15px 0;
+    background: #1e3551;
+  }
+  
+  .navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar .menu li {
+    list-style: right;
+    display: inline-block;
+  }
+  
+  .navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 70px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .menu li a:hover {
+    color: #4588db;
+  }
+  
+  .navbar.sticky .menu li a:hover {
+    color: #fff;
+  }
+
+  .navbar .ResName {
+    font-size: xxx-large;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .navbar .logo {
+    display: flex;
+    margin-right: auto;
+  }
